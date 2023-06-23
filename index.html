@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation." />
+  <meta name="author" content="LEARN TECH" />
+  <meta name="keywords" content="TECH EDU | LEARN TECH" />
+
+  <!-- Facebook OG Tags -->
+  <meta property="og:title" content="TECH EDU" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yoshitharathnayake.github.io/TECH-EDU" />
+  <meta property="og:image" content="assets/img/og.jpg" alt="TECH EDU" />
+  <meta property="og:description"
+    content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation." />
+  <meta property="og:site_name" content="TECH EDU" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css"
+    integrity="sha512-E5hbw9GiuYofTcrbba1gAU64dn/54A9nmk4IEMzmp+YmiLc0WnRLOfzofb/r6spu5CVilyob07HWGhXq7Ht7dQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Swipers CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Edo Font -->
+  <link href="https://fonts.cdnfonts.com/css/edo" rel="stylesheet">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- LineIcons -->
+  <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet" />
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+
+  <!-- CSS-->
+  <link rel="stylesheet" type="text/CSS" href="assets/css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" alt="Favicon" />
+
+  <!-- Title -->
+  <title>TECH EDU | LEARN TECH</title>
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Navigation Bar -->
+  <div>
+    <!-- Desktop View Navigation Bar -->
+    <nav class="nav-bar container-fluid responsive">
+
+      <!-- Nav Label -->
+      <label><a href="/"><img id="nav-label" src="assets/img/logo.png" alt="Tech Edu Logo" /></a></label>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li>
+          <a href="/" class="nav-items" id="home" onclick="home()" style="color: rgb(0, 255, 204);">home</a>
+        </li>
+        <li>
+          <a href="about/about.html" class="nav-items" id="about" onclick="about()">about</a>
+        </li>
+        <li>
+          <a href="courses/courses.html" class="nav-items" id="courses" onclick="courses()">courses</a>
+        </li>
+        <li>
+          <a href="contact/contact.html" class="nav-items" id="contact" onclick="contact()">contact</a>
+        </li>
+      </ul>
+
+      <!-- Menu Icons -->
+      <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff" id="hamburger" onclick="NavOpen()"></i>
+      <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff" id="close" onclick="NavClose()"></i>
+    </nav>
+
+    <!-- Mobile View Navigation Bar (Side Navigation Bar) -->
+    <nav class="side-bar">
+      <div class="side-nav">
+
+        <!-- Nav Label -->
+        <label><a href="/"><img id="side-label" src="assets/img/logo.png" alt="Tech Edu Logo" /></a></label>
+
+        <!-- Nav Links -->
+        <a class="nav-item" id="side-home" href="/" style="color: rgb(0, 255, 204);">home</a>
+        <a href="about/about.html" id="side-about" class="nav-item">about</a>
+        <a class="nav-item" id="side-courses" href="courses/courses.html">
+          courses
+        </a>
+        <a class="nav-item" id="side-contact" href="contact/contact.html">
+          contact
+        </a>
+      </div>
+
+      <!-- Nav Overlay -->
+      <div id="nav-overlay" onclick="NavOverlay()"></div>
+    </nav>
+  </div>
+
+  <section id="home-section">
+    <!-- Home Page silder goes here -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/slider/img7.jpg" class="d-block h-100 w-100" alt="Welcome" />
+          <div class="carousel-caption work">
+            <h3 class="animated bounceInLeft welcome" style="animation-delay: 1s">
+              WELCOME TO
+            </h3>
+            <h1 class="animated bounceInRight tech-edu" style="animation-delay: 2s">
+              TECH EDU
+            </h1>
+            <h2 class="animated bounceInLeft edu-institute" style="animation-delay: 3s">
+              EDUCATIONAL INSTITUTE
+            </h2>
+            <div class="home-btn">
+              <p class="animated bounceInRight about" style="animation-delay: 4s">
+                <a href="#" class="about-btn">ABOUT US</a>
+              </p>
+              <!-- 
+              <p class="animated bounceInRight find" style="animation-delay: 4s">
+              <a href="#">FIND A COURSE</a>
+            </p>
+             -->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/img1.jpg" class="d-block h-100 w-100" alt="Web Development" />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              WEB DEVELOPMENT
+            </h5>
+            <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+              Web development is creating websites by planning & arranging
+              content for online sharing & access.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/img2.jpg" class="d-block h-100 w-100" alt="Graphics Design" />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              GRAPHICS DESIGN
+            </h5>
+            <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+              Designing visual content that communicates ideas & messages
+              effectively is what graphics design is.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/img3.jpg" class="d-block h-100 w-100" alt="Software Development" />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              SOFTWARE DEVELOPMENT
+            </h5>
+            <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+              Software development is the process of creating efficient,
+              reliable, & easy-to-use applications.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/img6.jpg" class="d-block h-100 w-100" alt="Network Technology" />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              GAME DEVELOPMENT
+            </h5>
+            <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+              Game development is the art of creating games through concept
+              generation & design.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/img4.jpg" class="d-block h-100 w-100" alt="Robotics Technology" />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              ROBOTICS TECHNOLOGY
+            </h5>
+            <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+              Robotics technology is the design, construction, & operation of
+              robots to perform tasks autonomously.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/img5.jpg" class="d-block h-100 w-100" alt="Network Technology" />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              NETWORK TECHNOLOGY
+            </h5>
+            <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+              Network technology is the design & management of computer networks
+              for communication.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Back to Top Button goes here -->
+  <div id="backToTop"></div>
+
+  <!-- Second Section -->
+  <section id="second-section">
+
+    <!-- About Us Section goes here -->
+    <div id="intro">
+      <img src="assets/img/logo.png" alt="Tech Edu Logo" class="sec-logo">
+      <p class="sec-text">
+        Hello! Welcome to Tech Edu, your premier destination for acquiring comprehensive knowledge and expertise in the
+        realm of technology. As a leading educational institute, Tech Edu is committed to empowering individuals with
+        the
+        skills and know-how necessary to excel in the fast-paced world of technology.
+      </p>
+    </div>
+
+    <!-- Strength Section (Counter) -->
+    <div class="count-num mt-5">
+      <h2 class="title text-center">OUR STENGTH</h2>
+      <h1 class="shadow-text text-center">STRENGTH</h1>
+      <center>
+        <hr width="200px">
+      </center>
+      <p class="intro-text mb-5 pb-5">
+        Our tech edu institute boasts 100 courses, 50 skilled teachers, 300 eager students, and 40 branches nationwide,
+        empowering learners with cutting-edge knowledge and preparing them for success.</p>
+    </div>
+    <center>
+      <div class="counter-section row row-cols-2 row-cols-lg-4 justify-content-center mb-5 pb-5">
+        <div class="count">
+          <h1 class="counter-topic">COURSES</h1>
+          <center>
+            <hr>
+          </center>
+          <div class="counter text-center" data-target="100">0</div>
+        </div>
+        <div class="count">
+          <h1 class="counter-topic">TEACHERS</h1>
+          <center>
+            <hr>
+          </center>
+          <div class="counter text-center" data-target="50">0</div>
+        </div>
+        <div class="count">
+          <h1 class="counter-topic">STUDENTS</h1>
+          <center>
+            <hr>
+          </center>
+          <div class="counter text-center" data-target="300">0</div>
+        </div>
+        <div class="count">
+          <h1 class="counter-topic">BRANCHES</h1>
+          <center>
+            <hr>
+          </center>
+          <div class="counter text-center" data-target="40">0</div>
+        </div>
+      </div>
+    </center>
+    <!-- <div class="stats">
+    <div>
+      <p class="text text-center">COURSES</p>
+      <span class="sta" data-max="100">0+</span>
+    </div>
+    <div>
+      <p class="text text-center">TEACHERS</p>
+      <span class="sta" data-max="200">0+</span>
+    </div>
+    <div>
+      <p class="text text-center">STUDENTS</p>
+      <span class="sta" data-max="500">0+</span>
+    </div>
+    <div>
+      <p class="text text-center">BRANCHES</p>
+      <span class="sta" data-max="20">0+</span>
+    </div>
+  </div> -->
+    </div>
+
+    <!-- Awards Section -->
+    <div class="awards">
+      <h2 class="title text-center pt-5">OUR AWARDS</h2>
+      <h1 class="shadow-text text-center">AWARDS</h1>
+      <center>
+        <hr width="200px">
+      </center>
+      <p class="intro-text pb-5 mb-5">
+        We take pride in our accolades: Excellence in Technological Education Award, Outstanding Technological Institute
+        Award, and Digital Learning Pioneer Award. These recognitions affirm our commitment to delivering top-notch tech
+        education.
+      </p>
+      <div class="imgs row row-cols-3 row-cols-lg-3 justify-content-center mb-5 pb-5">
+        <img src="assets/img/trophy1.png" class="img1" alt="Trophy 1" data-toggle="tooltip"
+          title="Excellence in Technological Education Award">
+        <img src="assets/img/trophy2.png" class="img2" alt="Trophy 2" data-toggle="tooltip"
+          title="Outstanding Technological Institute Award">
+        <img src="assets/img/trophy3.png" class="img3" alt="Trophy 3" data-toggle="tooltip"
+          title="Digital Learning Pioneer Award">
+      </div>
+    </div>
+
+    <!-- Categories Section -->
+    <div id="categories" class="pt-5">
+      <h2 class="title text-center">CATEGORIES</h2>
+      <h1 class="shadow-text text-center">CATEGORIES</h1>
+      <center>
+        <hr width="200px">
+      </center>
+      <p class="intro-text mb-5 pb-5">
+        Choose from our tech edu institute's diverse categories: Web Development, Graphics Design, Software Development,
+        Game Development, Robotics Technology, and Network Technology. Discover your passion and unlock endless
+        possibilities.
+      </p>
+      <div class="cards mb-5 pb-5">
+        <div class="card card1">
+          <div class="container1">
+            <img src="assets/img/slider/img1.jpg" alt="Web Development">
+          </div>
+          <div class="details">
+            <h3>WEB DEVELOPMENT</h3>
+            <p>Creating websites & applications that shape the digital landscape & drive online experiences.</p>
+            <a href="courses/courses.html#web" class="learn-btn">learn more</a>
+          </div>
+        </div>
+
+        <div class="card card2">
+          <div class="container1">
+            <img src="assets/img/slider/img2.jpg" alt="Graphics Design">
+          </div>
+          <div class="details">
+            <h3>GRAPHICS DESIGN</h3>
+            <p>Where artistry meets communication, creating visually compelling & impactful designs that captivate &
+              inspire.</p>
+            <a href="courses/courses.html#graphics" class="learn-btn">learn more</a>
+          </div>
+        </div>
+
+        <div class="card card3">
+          <div class="container1">
+            <img src="assets/img/slider/img3.jpg" alt="Software Development">
+          </div>
+          <div class="details">
+            <h3>SOFTWARE DEVELOPMENT</h3>
+            <p>Transforming ideas into functional & innovative digital solutions through coding, problem-solving, &
+              continuous iteration.</p>
+            <a href="courses/courses.html#software" class="learn-btn">learn more</a>
+          </div>
+        </div>
+
+        <div class="card card4">
+          <div class="container1">
+            <img src="assets/img/slider/img4.jpg" alt="Robotics Technology">
+          </div>
+          <div class="details">
+            <h3>ROBOTICS TECHNOLOGY</h3>
+            <p>Blending mechanics, electronics, & AI to create intelligent machines that revolutionize industries &
+              improve lives.</p>
+            <a href="courses/courses.html#robotics" class="learn-btn">learn more</a>
+          </div>
+        </div>
+
+        <div class="card card5">
+          <div class="container1">
+            <img src="assets/img/slider/img5.jpg" alt="Network Technology">
+          </div>
+          <div class="details">
+            <h3>NETWORK TECHNOLOGY</h3>
+            <p>Building digital highways that connect people, devices, & information, enabling seamless communication &
+              collaboration.</p>
+            <a href="courses/courses.html#network" class="learn-btn">learn more</a>
+          </div>
+        </div>
+
+        <div class="card card6">
+          <div class="container1">
+            <img src="assets/img/slider/img6.jpg" alt="Web Development">
+          </div>
+          <div class="details">
+            <h3>GAME DEVELOPMENT</h3>
+            <p>Merging creativity & technology to craft immersive experiences that captivate & entertain players.</p>
+            <a href="courses/courses.html#web" class="learn-btn">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Teachers Section -->
+    <div class="teachers">
+      <h2 class="title text-center pt-5">OUR TEACHERS</h2>
+      <h1 class="shadow-text text-center">TEACHERS</h1>
+      <center>
+        <hr width="200px">
+      </center>
+      <p class="intro-text pb-5 mb-5">
+        At our tech edu institute, we've assembled the best teachers in the field. Their expertise, passion, and
+        dedication ensure our students receive exceptional education and guidance for a successful tech career.
+      </p>
+      <section class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="card swiper-slide" style="background-image: url(assets/img/slider/img1.jpg);">
+            <div class="card__image">
+              <img src="assets/img/teacher4.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <div class="media-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <h2 class="name">EMLY SOPHIA</h2>
+              <h3 class="profession">TEACHER</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="description">"I am grateful for this incredible tech edu institute that empowers students to
+                reach their full potential."</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide" style="background-image: url(assets/img/slider/img2.jpg);">
+            <div class="card__image">
+              <img src="assets/img/teacher2.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <div class="media-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <h2 class="name">JOHN SHANE</h2>
+              <h3 class="profession">TEACHER</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="description">"I am immensely thankful for the remarkable tech edu institute that cultivates
+                limitless possibilities in our students."</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide" style="background-image: url(assets/img/slider/img3.jpg);">
+            <div class="card__image">
+              <img src="assets/img/teacher3.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <div class="media-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <h2 class="name">AMILIA VICTORIA</h2>
+              <h3 class="profession">TEACHER</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="description">"I am truly appreciative of the outstanding tech edu institute that fosters a
+                culture of excellence and growth."</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide" style="background-image: url(assets/img/slider/img4.jpg);">
+            <div class="card__image">
+              <img src="assets/img/teacher1.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <div class="media-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <h2 class="name">SAL KHAN</h2>
+              <h3 class="profession">TEACHER</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="description">"I feel privileged to be a part of this exceptional tech edu institute that
+                nurtures future innovators."</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide" style="background-image: url(assets/img/slider/img5.jpg);">
+            <div class="card__image">
+              <img src="assets/img/teacher5.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <div class="media-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <h2 class="name">LILY HARPER</h2>
+              <h3 class="profession">TEACHER</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="description">"I am constantly inspired by the remarkable tech edu institute that fuels passion
+                and ignites brilliance."</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide" style="background-image: url(assets/img/slider/img6.jpg);">
+            <div class="card__image">
+              <img src="assets/img/teacher6.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <div class="media-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <h2 class="name">PETER HARRY</h2>
+              <h3 class="profession">TEACHER</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="description">"I am honored to be associated with this remarkable tech edu institute that equips
+                students for a tech-driven world."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+        <div class="wrapper">
+        <i id="left" class="i fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="img"><img src="assets/img/teacher1.jpg" alt="" draggable="false"></div>
+            <h2 class="name">SAL KHAN</h2>
+            <h3 class="profession">TEACHER</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+          <li class="card">
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="img"><img src="assets/img/teacher1.jpg" alt="" draggable="false"></div>
+            <h2 class="name">SAL KHAN</h2>
+            <h3 class="profession">TEACHER</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+          <li class="card">
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="img"><img src="assets/img/teacher1.jpg" alt="" draggable="false"></div>
+            <h2 class="name">SAL KHAN</h2>
+            <h3 class="profession">TEACHER</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+          <li class="card">
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="img"><img src="assets/img/teacher1.jpg" alt="" draggable="false"></div>
+            <h2 class="name">SAL KHAN</h2>
+            <h3 class="profession">TEACHER</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+          <li class="card">
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="img"><img src="assets/img/teacher1.jpg" alt="" draggable="false"></div>
+            <h2 class="name">SAL KHAN</h2>
+            <h3 class="profession">TEACHER</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </li>
+        </ul>
+        <i id="right" class="i fa-solid fa-angle-right"></i>
+      </div>
+       -->
+      <!-- 
+        <div class="media-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <div class="card-content">
+      <h2 class="name">SAL KHAN</h2>
+      <h3 class="profession">TEACHER</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="description">"I am proud to be a teacher at our tech education institute. It is a remarkable
+        institution that fosters growth, learning, and empowers students to excel in the digital world."</p>
+    </div>
+
+    </div>
+       -->
+  </section>
+
+
+    <!-- Footer goes here -->
+    <div id="footer" style="position: relative;">
+      <footer class="footer-section">
+          <div class="container">
+              <div class="footer-cta pt-5 pb-5">
+                  <div class="row">
+                      <div class="col-xl-4 col-md-4 mb-3">
+                          <div class="single-cta">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <div class="cta-text">
+                                  <h4>Find us</h4>
+                                  <span>No : 20/1, Katugasthota, Kandy</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-3">
+                          <div class="single-cta">
+                              <i class="fas fa-phone"></i>
+                              <div class="cta-text">
+                                  <h4>Call us</h4>
+                                  <span><a class="phone" href="tel:+94 081 221 2124">081 221 2124</a></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-3">
+                          <div class="single-cta">
+                              <i class="far fa-envelope-open"></i>
+                              <div class="cta-text">
+                                  <h4>Mail us</h4>
+                                  <span><a class="email"
+                                          href="mailto:yoshithasbrathnayake@gmail.com">info@tech.edu.lk</a></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-content pt-5 pb-5">
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 mb-50">
+                          <div class="footer-widget">
+                              <div class="footer-logo">
+                                  <a href="/"><img src="assets/img/logo.png" class="img-fluid" alt="logo"></a>
+                              </div>
+                              <div class="footer-text">
+                                  <p>
+                                      Tech Edu Institute: Where innovation meets education. Experience transformative
+                                      learning, industry-relevant skills, and a vibrant community that propels your
+                                      tech
+                                      career to new heights. Join us today!</p>
+                              </div>
+                              <div class="footer-social-icon">
+                                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                  <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter twitter-bg"></i></a>
+                                  <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube google-bg"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 mt-5">
+                          <div class="footer-widget">
+                              <div class="footer-widget-heading">
+                                  <h3>Useful Links</h3>
+                              </div>
+                              <ul>
+                                  <li><a href="#" style="text-decoration: none;">Home</a></li>
+                                  <li><a href="about/about.html" style="text-decoration: none;">about</a></li>
+                                  <li><a href="courses/courses.html" style="text-decoration: none;">courses</a></li>
+                                  <li><a href="contact/contact.html" style="text-decoration: none;">contact</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 mb-3 mt-5">
+                          <div class="footer-widget">
+                              <div class="footer-widget-heading">
+                                  <h3>Subscribe</h3>
+                              </div>
+                              <div class="footer-text mb-25">
+                                  <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                              </div>
+                              <div class="subscribe-form">
+                                  <form action="#">
+                                      <input type="text" placeholder="Email Address">
+                                      <button><i class="fab fa-telegram-plane"></i></button>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="copyright-area">
+              <div class="container">
+                  <div class="row">
+                      <div class=" text-center">
+                          <div class="copyright-text">
+                              <center>
+                                  <p style="text-align: center;">Copyright &copy; 2023, All Right Reserved <a href="/"
+                                          style="text-decoration: none;"><b>TECH EDU</b></a>
+                                  </p>
+                              </center>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/script.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/88fd71b348.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Internel Script goes here -->
+  <script>
+    // Scroll Animation
+    ScrollReveal({
+      reset: true,
+      distance: '100px',
+      duration: 2000,
+    });
+    ScrollReveal().reveal('.sec-logo', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.sec-text', { delay: 1000, origin: 'left' });
+    ScrollReveal().reveal('.title , .shadow-text', { delay: 500, origin: 'right' });
+    ScrollReveal().reveal('#categories hr', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.count-num hr', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.awards hr', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.teachers hr', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.intro-text', { delay: 1000, origin: 'left' });
+    ScrollReveal().reveal('.card1', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.card2', { delay: 1000, origin: 'left' });
+    ScrollReveal().reveal('.card3', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.card4', { delay: 1000, origin: 'left' });
+    ScrollReveal().reveal('.card5', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.card6', { delay: 1000, origin: 'left' })
+    ScrollReveal().reveal('.counter-section', { delay: 1500, origin: 'bottom' });
+    ScrollReveal().reveal('.awards .img1', { delay: 1000, origin: 'left' });
+    ScrollReveal().reveal('.awards .img2', { delay: 1500, origin: 'left' });
+    ScrollReveal().reveal('.awards .img3', { delay: 2000, origin: 'left' });
+
+    // Menu icons animation
+    const menu_toggle = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    menu_toggle.addEventListener("click", () => {
+      menu_toggle.classList.toggle("is-active");
+      sidebar.classList.toggle("is-active");
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+    setTimeout(function () {
+      $('#preloader').fadeToggle();
+    }, 3500);
+  </script>
+</body>
+
+</html>

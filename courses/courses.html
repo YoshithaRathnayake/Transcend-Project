@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation." />
+    <meta name="author" content="LEARN TECH" />
+    <meta name="keywords" content="COURSES | TECH EDU" />
+
+    <!-- Facebook OG Tags -->
+    <meta property="og:title" content="TECH EDU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yoshitharathnayake.github.io/TECH-EDU" />
+    <meta property="og:image" content="../assets/img/og.jpg" alt="TECH EDU" />
+    <meta property="og:description"
+        content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation." />
+    <meta property="og:site_name" content="TECH EDU" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css"
+        integrity="sha512-E5hbw9GiuYofTcrbba1gAU64dn/54A9nmk4IEMzmp+YmiLc0WnRLOfzofb/r6spu5CVilyob07HWGhXq7Ht7dQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swipers CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Edo Font -->
+    <link href="https://fonts.cdnfonts.com/css/edo" rel="stylesheet">
+
+    <!-- LineIcons -->
+    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/CSS" href="../assets/css/about.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" alt="Favicon" />
+
+    <!-- Title -->
+    <title>COURSES | TECH EDU</title>
+</head>
+<style>
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .footer-section {
+        background: #252525b7;
+        backdrop-filter: blur(50px);
+        position: relative;
+    }
+
+    .footer-cta {
+        border-bottom: 1px solid #373636;
+    }
+
+    .single-cta i {
+        color: #14ffad;
+        font-size: 30px;
+        float: left;
+        margin-top: 8px;
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+
+    .cta-text {
+        padding-left: 15px;
+        display: inline-block;
+        padding-top: 20px;
+    }
+
+    .cta-text h4 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+
+    .cta-text span {
+        color: #757575;
+        font-size: 15px;
+    }
+
+    .cta-text span a {
+        color: #757575;
+        font-size: 15px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .cta-text span a:hover {
+        color: rgb(193, 193, 193);
+        transition: 0.5s;
+    }
+
+
+    .footer-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .footer-pattern img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 330px;
+        background-size: cover;
+        background-position: 100% 100%;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .footer-logo img {
+        max-width: 200px;
+    }
+
+    .footer-text p {
+        margin-bottom: 14px;
+        font-size: 14px;
+        color: #7e7e7e;
+        line-height: 28px;
+    }
+
+    .footer-social-icon span {
+        color: #fff;
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .footer-social-icon a {
+        color: #fff;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .footer-social-icon i {
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 38px;
+        border-radius: 50%;
+    }
+
+    .facebook-bg {
+        background: #3B5998;
+    }
+
+    .twitter-bg {
+        background: #55ACEE;
+    }
+
+    .google-bg {
+        background: #ff1414;
+    }
+
+    .footer-widget-heading h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .footer-widget-heading h3::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        height: 2px;
+        width: 50px;
+        background: #14ffad;
+    }
+
+    .footer-widget ul li {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        margin-bottom: 12px;
+    }
+
+    .footer-widget ul li a:hover {
+        color: #14ffad;
+    }
+
+    .footer-widget ul li a {
+        color: #878787;
+        text-transform: capitalize;
+    }
+
+    .subscribe-form {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .subscribe-form input {
+        width: 100%;
+        padding: 14px 28px;
+        background: #2E2E2E;
+        border: 1px solid #2E2E2E;
+        color: #fff;
+    }
+
+    .subscribe-form button {
+        position: absolute;
+        right: 0;
+        background: #14ffad;
+        padding: 13px 20px;
+        border: 1px solid #14ffad;
+        top: 0;
+    }
+
+    .subscribe-form button i {
+        color: #fff;
+        font-size: 22px;
+        transform: rotate(-6deg);
+    }
+
+    .copyright-area {
+        background: #202020;
+        padding: 25px 0;
+    }
+
+    .copyright-text p {
+        margin: 0;
+        font-size: 14px;
+        color: #878787;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .copyright-text p a {
+        color: #14ffad;
+    }
+
+    .footer-menu li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .footer-menu li:hover a {
+        color: #14ffad;
+    }
+
+    .footer-menu li a {
+        font-size: 14px;
+        color: #878787;
+    }
+</style>
+
+<body id="home-section" style="background-image: url(../assets/img/course-header.jpg);">
+
+    <!-- Navigation Bar -->
+    <div>
+        <!-- Desktop View Navigation Bar -->
+        <nav class="nav-bar container-fluid responsive">
+
+            <!-- Nav Label -->
+            <label><a href="/"><img id="nav-label" src="../assets/img/logo.png" alt="Tech Edu Logo" /></a></label>
+
+            <!-- Nav Links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html" class="nav-items" id="home" onclick="home()">home</a>
+                </li>
+                <li>
+                    <a href="../about/about.html" class="nav-items" id="about" onclick="about()">about</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-items" id="courses" onclick="courses()"
+                        style="color: rgb(0, 255, 204);">courses</a>
+                </li>
+                <li>
+                    <a href="../contact/contact.html" class="nav-items" id="contact" onclick="contact()">contact</a>
+                </li>
+            </ul>
+
+            <!-- Menu Icons -->
+            <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff" id="hamburger" onclick="NavOpen()"></i>
+            <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff" id="close" onclick="NavClose()"></i>
+        </nav>
+
+        <!-- Mobile View Navigation Bar (Side Navigation Bar) -->
+        <nav class="side-bar">
+            <div class="side-nav">
+
+                <!-- Nav Label -->
+                <label><a href="../index.html"><img id="side-label" src="../assets/img/logo.png" alt="Tech Edu Logo" /></a></label>
+
+                <!-- Nav Links -->
+                <a class="nav-item" id="side-home" href="/">home</a>
+                <a href="../about/about.html" id="side-about" class="nav-item">about</a>
+                <a class="nav-item" id="side-courses" href="#" style="color: rgb(0, 255, 204);">
+                    courses
+                </a>
+                <a class="nav-item" id="side-contact" href="../contact/contact.html">
+                    contact
+                </a>
+            </div>
+
+            <!-- Nav Overlay -->
+            <div id="nav-overlay" onclick="NavOverlay()"></div>
+        </nav>
+    </div>
+
+    <!-- Back to Top button goes here -->
+    <div id="backToTop"></div>
+
+    <div class="header">
+        <h1 class="main-header">COURSES</h1>
+        <center>
+            <hr>
+        </center>
+    </div>
+
+    <section id="second-section">
+        <div class="content">
+            <div id="web">
+                <h2 class="title text-center pt-5">WEB DEVELOPMENT</h2>
+                <h1 class="shadow-text text-center">DEVELOPMENT</h1>
+                <center>
+                    <hr width="200px">
+                </center>
+                <div class="cards mb-5 pb-5">
+                    <div class="card card1">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img1.jpg" alt="Web Development">
+                        </div>
+                        <div class="details">
+                            <h3>Fundamentals in Web Development</h3>
+                            <p>By Emly Sophia</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">6 Months</p>
+                                <p class="price mb-4">$100</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card2">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img1.jpg" alt="Web Development">
+                        </div>
+                        <div class="details">
+                            <h3>Advance Level in Web Development</h3>
+                            <p>By Emly Sophia</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">1 Year</p>
+                                <p class="price mb-4">$200</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="graphics">
+                <h2 class="title text-center pt-5">GRAPHICS DESIGN</h2>
+                <h1 class="shadow-text text-center">DESIGN</h1>
+                <center>
+                    <hr width="200px">
+                </center>
+                <div class="cards mb-5 pb-5">
+                    <div class="card card1">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img2.jpg" alt="Graphics Design">
+                        </div>
+                        <div class="details">
+                            <h3>Fundamentals in Graphics Design</h3>
+                            <p>By John Shane</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">6 Months</p>
+                                <p class="price mb-4">$150</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img2.jpg" alt="Graphics Design">
+                        </div>
+                        <div class="details">
+                            <h3>Advance Level in Graphics Design</h3>
+                            <p>By John Shane</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">1 Year</p>
+                                <p class="price mb-4">$300</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="software">
+                <h2 class="title text-center pt-5">SOFTWARE DEVELOPMENT</h2>
+                <h1 class="shadow-text text-center">DEVELOPMENT</h1>
+                <center>
+                    <hr width="200px">
+                </center>
+                <div class="cards mb-5 pb-5">
+                    <div class="card card1">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img3.jpg" alt="Software Development">
+                        </div>
+                        <div class="details">
+                            <h3>Fundamentals in Software Development</h3>
+                            <p>By Amilia Victoria</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">6 Months</p>
+                                <p class="price mb-4">$200</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img3.jpg" alt="Software Development">
+                        </div>
+                        <div class="details">
+                            <h3>Advance Level in Software Development</h3>
+                            <p>By Amilia Victoria</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">1 Year</p>
+                                <p class="price mb-4">$400</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="robotics">
+                <h2 class="title text-center pt-5">ROBOTICS TECHNOLOGY</h2>
+                <h1 class="shadow-text text-center">TECHNOLOGY</h1>
+                <center>
+                    <hr width="200px">
+                </center>
+                <div class="cards mb-5 pb-5">
+                    <div class="card card1">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img4.jpg" alt="Robotics Technology">
+                        </div>
+                        <div class="details">
+                            <h3>Fundamentals in Robotics Technology</h3>
+                            <p>By Sal Khan</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">6 Months</p>
+                                <p class="price mb-4">$100</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img4.jpg" alt="Robotics Technology">
+                        </div>
+                        <div class="details">
+                            <h3>Advance Level in Robotics Technology</h3>
+                            <p>By Sal Khan</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">1 Year</p>
+                                <p class="price mb-4">$200</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="network">
+                <h2 class="title text-center pt-5">NETWORK TECHNOLOGY</h2>
+                <h1 class="shadow-text text-center">TECHNOLOGY</h1>
+                <center>
+                    <hr width="200px">
+                </center>
+                <div class="cards mb-5 pb-5">
+                    <div class="card card1">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img5.jpg" alt="Network Technology">
+                        </div>
+                        <div class="details">
+                            <h3>Fundamentals in Network Technology</h3>
+                            <p>By Lily Harper</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">6 Months</p>
+                                <p class="price mb-4">$50</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img5.jpg" alt="Network Technology">
+                        </div>
+                        <div class="details">
+                            <h3>Advance Level in Network Technology</h3>
+                            <p>By Lily Harper</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">1 Year</p>
+                                <p class="price mb-4">$100</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game">
+                <h2 class="title text-center pt-5">GAME DEVELOPMENT</h2>
+                <h1 class="shadow-text text-center">DEVELOPMENT</h1>
+                <center>
+                    <hr width="200px">
+                </center>
+                <div class="cards mb-5 pb-5">
+                    <div class="card card1">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img6.jpg" alt="Game Development">
+                        </div>
+                        <div class="details">
+                            <h3>Fundamentals in Game Development</h3>
+                            <p>By Peter Harry</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">6 Months</p>
+                                <p class="price mb-4">$125</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card2">
+                        <div class="container1">
+                            <img src="../assets/img/slider/img6.jpg" alt="Game Development">
+                        </div>
+                        <div class="details">
+                            <h3>Advance Level in Game Development</h3>
+                            <p>By Peter Harry</p>
+                            <div class="enroll mt-5">
+                                <p class="time mb-2">1 Year</p>
+                                <p class="price mb-4">$250</p>
+                                <a href="#" class="enroll-btn p-3">ENROLL NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer goes here -->
+    <div id="footer" style="position: relative; top: 200px !important;">
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-3">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>No : 20/1, Katugasthota, Kandy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-3">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span><a class="phone" href="tel:+94 081 221 2124">081 221 2124</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-3">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span><a class="email"
+                                            href="mailto:yoshithasbrathnayake@gmail.com">info@tech.edu.lk</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="/"><img src="../assets/img/logo.png" class="img-fluid" alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>
+                                        Tech Edu Institute: Where innovation meets education. Experience transformative
+                                        learning, industry-relevant skills, and a vibrant community that propels your
+                                        tech
+                                        career to new heights. Join us today!</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mt-5">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="../index.html" style="text-decoration: none;">Home</a></li>
+                                    <li><a href="../about/about.html" style="text-decoration: none;">about</a></li>
+                                    <li><a href="#" style="text-decoration: none;">courses</a></li>
+                                    <li><a href="../contact/contact.html" style="text-decoration: none;">contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-3 mt-5">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class=" text-center">
+                            <div class="copyright-text">
+                                <center>
+                                    <p style="text-align: center;">Copyright &copy; 2023, All Right Reserved <a href="/"
+                                            style="text-decoration: none;"><b>TECH EDU</b></a>
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/about.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/88fd71b348.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Internel Script goes here -->
+    <script>
+        // Scroll Animation
+        ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 2000,
+        });
+        ScrollReveal().reveal('.header .main-header', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.header hr', { delay: 1000, origin: 'bottom' });
+        ScrollReveal().reveal('.title , .shadow-text', { delay: 500, origin: 'right' });
+        ScrollReveal().reveal('hr', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#web .card1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#web .card2', { delay: 1000, origin: 'left' });
+        ScrollReveal().reveal('#graphics .card1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#graphics .card2', { delay: 1000, origin: 'left' });
+        ScrollReveal().reveal('#software .card1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#software .card2', { delay: 1000, origin: 'left' });
+        ScrollReveal().reveal('#robotics .card1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#robotics .card2', { delay: 1000, origin: 'left' });
+        ScrollReveal().reveal('#network .card1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#network .card2', { delay: 1000, origin: 'left' });
+        ScrollReveal().reveal('#game .card1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#game .card2', { delay: 1000, origin: 'left' });
+
+
+        // Menu icons animation
+        const menu_toggle = document.querySelector(".menu-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        menu_toggle.addEventListener("click", () => {
+            menu_toggle.classList.toggle("is-active");
+            sidebar.classList.toggle("is-active");
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
